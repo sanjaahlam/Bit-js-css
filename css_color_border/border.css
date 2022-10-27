@@ -1,0 +1,30 @@
+p{
+    background-color: yellow;
+    border-width: 5px thick !important; 
+    
+  }
+  
+  p.jedan{
+    border: 5px dashed red;
+    padding: 50px;
+   
+  }
+  
+  p.dva{
+    border: 5px solid green;
+    padding-top: 50px;
+    margin: 0px 400px 0px 400px !important;
+    align-self: center !important  ;
+  
+  }
+  
+  p.jedan{
+    margin-left: 300px;
+    margin-right: 300px;
+    margin: 50px;
+  }
+  
+ p.tri{
+    margin: 0 200px 0 300px;
+    border: 5px dashed red;
+  }

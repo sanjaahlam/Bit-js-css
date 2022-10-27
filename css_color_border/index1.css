@@ -1,0 +1,22 @@
+p.prvi{
+    background-color: yellow;
+    width: 400px;
+    height: 500px;
+    max-width: 300px;
+    overflow: auto;
+  }
+  
+  p.drugi{
+    background-color: red;
+    width: 600px;
+    height: 300px;
+    max-height: 200px;
+    
+  }
+  p{
+    margin-right: 20px;
+    padding: 0;
+   
+    display: inline;
+  }
+  
