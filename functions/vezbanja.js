@@ -1,4 +1,5 @@
 //1. Write a program that calculates the maximum of two given numbers.
+//Prvi nacin
 
 function max() {
     var ans = arguments[0];
@@ -16,6 +17,7 @@ console.log(max(3, 2, 1));
 
 
 //1. Write a program that calculates the maximum of two given numbers.
+//Drugi nacin
 var veci;
 function max( a, b) {
     if (a == b){
@@ -29,17 +31,36 @@ function max( a, b) {
     }
 console.log(max(3,4))
 
+//1.Write a program that calculates the maximum of two given numbers.
+//Treci nacin
+function maxOutOfTwo (a,b){
+    if(a>b){
+        return a;
+    }
+    return b;
+}
+console.log (maxOutOfTwo(11,8))
 //2.Write a program that checks if a given number is odd.
+//Prvi način
+
 var paran;
     if(a % 2 == 0) {
     paran= 'Broj je paran';
 } else {
     paran= 'Broj je neparan';
 }
-console.log (isOdd(4))
+console.log (isOdd (4 ))
 
+//2.Write a program that checks if a given number is odd.
+//Drugi Način
+function checkIfIsOdd(a) {
+    return a % 2 !== 0;
+}
+
+console.log(checkIfIsOdd(3))
 
 //3. Write a program that checks if a given number is a three digit long number.
+
 var isThreeDigit;
 function threeDigit(a){
   if (a>99 && a <1000){
@@ -51,6 +72,19 @@ function threeDigit(a){
 }
 console.log(threeDigit(165)) 
 
+//3. Write a program that checks if a given number is a three digit long number.
+//Drugi način
+
+function checkDigitLength(a) {
+    return (a + '').length;
+}
+
+var digitLength = checkDigitLength(332);
+if (digitLength >= 3) {
+    console.log('The digit length is', digitLength);
+}
+
+
 //4. Write a program that calculates an arithmetic mean of four numbers.
 
 var prosek;
@@ -59,6 +93,22 @@ prosek=(a+b+c+d) / 4;
 return prosek;
 }
 console.log((average(1,2,3,4)));
+//4. Write a program that calculates an arithmetic mean of four numbers.
+//Drugi način
+
+function arithmeticMean() {
+    var args = arguments;
+    var result = 0;
+
+    for (var i = 0; i < args.length; i++) {
+        var value = args[i + ''];
+        result += value;
+    }
+
+    return result / args.length;
+}
+
+console.log(arithmeticMean(3, 4, 5, 18, 22))
 
 //5.Write a program that draws a square of a given size. For example, if the size of square is 5 the program should draw:
 //*****
