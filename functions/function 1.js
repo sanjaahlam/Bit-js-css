@@ -33,6 +33,7 @@ console.log(max(3,4))
 
 //1.Write a program that calculates the maximum of two given numbers.
 //Treci nacin
+
 function maxOutOfTwo (a,b){
     if(a>b){
         return a;
